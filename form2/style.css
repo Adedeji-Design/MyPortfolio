@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #0c0c25;
+}
+
+form{
+  max-width: 300px;
+  margin: 150px auto;
+  padding: 20px;
+  background-color: #b46161;
+  
+  
+}
+
+input{
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+input[type=submit]{
+  margin-top: 30px;
+  background-color: #09091b;
+  color: white;
+}
+
+input[type=submit]:hover{
+  color: #09091b;
+  background-color: #ccc;
+  transition: 0.15s;
+}
+input[type=submit]:active{
+  background-color: #09091b;
+  color: white;
+}
+
+.little{
+  margin-top: 20px;
+}
+input[type=checkbox]{
+   margin-left: -47%; 
+}
+
+
+
+

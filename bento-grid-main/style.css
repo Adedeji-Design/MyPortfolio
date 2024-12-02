@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  padding: 100px;
+  background-color: rgba(235, 227, 227, 0.582);
+}
+
+.container{
+  display: grid;
+  grid-template-areas: 
+  'post social social audience'
+  'sidebar platform schedule audience'
+  'sidebar fast grow grow'
+  
+  ;
+  gap: 1rem;
+  margin-bottom: 30px;
+  
+}
+.post{
+  grid-area: post;
+  background-color: pink;
+  font-size: 32px;
+  
+
+}
+.pur{
+  color: hsl(256, 67%, 59%);
+}
+.post img{
+  margin: 10px auto;
+  width: 100px;
+  margin-bottom: 50px;
+}
+.social{
+  grid-area: social;
+  background-color: hsl(256, 67%, 59%);
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}.social img{
+  margin: 20px;
+}
+.rate{
+  font-size: 18px;
+}
+.yel{
+  color:hsl(39, 100%, 71%) ;
+}
+.audience{
+  grid-area: audience;
+  background-color: hsl(254, 88%, 90%);
+  /* overflow: hidden; */
+  font-size: 20px;
+}
+.audience img{
+  margin-bottom: 30px;
+}
+.soc{
+  color: hsl(0, 0%, 7%);
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  
+}
+.sidebar{
+  grid-area: sidebar;
+  background-color: hsl(39, 100%, 71%);
+  font-size: 32px;
+}
+.sidebar img{
+  margin-top: 30px;
+}
+.platform{
+  grid-area: platform;
+  background-color: hsl(0, 0%, 100%);
+  font-size: 32px;
+}
+.platform img{
+  margin-bottom: 30px;
+}
+.schedule{
+  grid-area: schedule;
+  background-color: hsl(39, 100%, 71%);
+  font-size: 25px;
+}
+.fast{
+  grid-area: fast;
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+}
+.fast p{
+  font-size: 32px;
+}
+.fast span{
+  padding: 20px;
+  
+} 
+.fast img{
+  margin-top: 20px;
+}
+.grow{
+  grid-area: grow;
+  background-color: hsl(256, 67%, 59%);
+  display: flex;
+  color: white;
+  align-items: center;
+  font-size: 2rem;
+}
+img{
+  display: block;
+  width: 70%;
+  
+}
+
+.post,
+.social,
+.audience,
+.sidebar,
+.platform,
+.schedule,
+.fast,
+.grow{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+@media(max-width:500px){
+  .container{
+    grid-template-areas: 
+    'social'
+    'platform'
+    'schedule'
+    'audience'
+    'grow'
+    'fast'
+    'post'
+    'sidebar'
+  }
+  body{
+      padding: 40px;
+  }  
+  .audience{
+    text-align: center;
+  }
+  .grow{
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    padding: 20px;
+  }
+  .audience img{
+    margin: 0 auto;
+  }
+  .post img{
+    margin: 10px 2px ;
+  }
+}
